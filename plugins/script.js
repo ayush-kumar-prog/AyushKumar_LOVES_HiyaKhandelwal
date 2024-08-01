@@ -74,7 +74,7 @@ function typeText(element, text) {
     }, 200);
 }
 
-const heroTextContent = 'I love you billo';
+const heroTextContent = 'Happy Girlfriends Day Hiya, I adore you';
 typeText(heroText, heroTextContent);
 
 const fontChangeInterval = setInterval(() => {
