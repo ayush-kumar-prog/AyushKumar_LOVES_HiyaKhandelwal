@@ -89,9 +89,16 @@ const fontChangeInterval = setInterval(() => {
 const bgMusic = document.getElementById('bgMusic');
 const musicButton = document.getElementById('musicButton');
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', (event) => {
+    unmuteBackground();
     initiatePlayback();
+    updateQuote();
 });
+
+function unmuteBackground() {
+    bgMusic.muted = false;
+    updateMusicButton();
+}
 
 function initiatePlayback() {
     bgMusic.play().then(() => {
