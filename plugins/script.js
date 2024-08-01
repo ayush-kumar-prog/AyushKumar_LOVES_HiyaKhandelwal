@@ -119,11 +119,11 @@ function toggleMusic() {
 
 
 const quotes = [
-    "Baby, you're my love, my forevermore",
-    "Holding your hands standing near a shore.",
-    "Getting angry at me for silly little things.",
-    "But that makes me love you more...",
-    "I'll hold tight in moonless night",
+    "I wanted to kiss you so badly when we shared our first sunset.",
+    "This website being on the internet forever is a metaphor.",
+    "I love every ounce of emotion you share with me",
+    "That makes me love you more...",
+    "I'll hold you tight in a moonless stormy night",
     "while your lips shine bright.",
     "And I'll be on my way",
     "laying you on my arm",
