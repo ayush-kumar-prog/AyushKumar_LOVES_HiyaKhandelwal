@@ -120,8 +120,17 @@ function updateMusicButton() {
 musicButton.addEventListener('click', toggleMusic);
 
 function toggleMusic() {
-    bgMusic.muted = !bgMusic.muted;
-    updateMusicButton();
+    if (bgMusic.paused) {
+        bgMusic.play().then(() => {
+            bgMusic.muted = false;
+            updateMusicButton();
+        }).catch((error) => {
+            console.error("Playback prevented: ", error);
+        });
+    } else {
+        bgMusic.muted = !bgMusic.muted;
+        updateMusicButton();
+    }
 }
 
 
